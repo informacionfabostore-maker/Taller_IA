@@ -1,0 +1,1 @@
+Edge 2026-11-04. Dataset: 35; validacion: 10 errores en fixture incorrecta, 0 errores en dataset final. Interacciones verificadas: filtros, búsqueda, CRUD, localStorage, gráfico y modal. Capturas: 01-landing, 02-categoria, 03-dashboard, 04-modal, 05-mobile-390. Marcadores fotográficos pendientes de imágenes de estudiante.

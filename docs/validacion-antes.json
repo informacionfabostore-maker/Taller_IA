@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "categoria": "Comida",
+    "precio": -4,
+    "stock": -1,
+    "ciudad": "Londres",
+    "organico": "sí",
+    "activo": true,
+    "fechaRegistro": "2025-02-30",
+    "nombre": "x",
+    "productor": ""
+  },
+  {
+    "id": 1,
+    "nombre": "Otro producto",
+    "categoria": "Despensa",
+    "precio": 2000,
+    "stock": 2,
+    "stockMinimo": 4,
+    "productor": "Tienda",
+    "ciudad": "Cali",
+    "organico": false,
+    "activo": true,
+    "fechaRegistro": "2026-05-12"
+  }
+]

@@ -1,1 +1,88 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>EcoMarket | Compra local</title><link rel="stylesheet" href="styles.css"><script src="validacion.js" defer></script><script src="app.js" defer></script></head><body><header><a class="logo" href="#inicio">eco<span>market</span></a><nav><a href="#inicio">Inicio</a><a href="#catalogo">Catálogo</a><button id="admin-link">Administración</button></nav></header><main><section id="inicio" class="hero"><div><small>BUENO PARA TI. JUSTO CON QUIEN LO CULTIVA.</small><h1>Lo local sabe<br><em>a futuro.</em></h1><p>Productos sostenibles directo de quienes los hacen.</p><a class="button" href="#catalogo">Explorar productos ↓</a></div><div class="art">🥑 🍊 🥬<br>🌽 🍅 🍋<small>FRESCO · LOCAL · CON PROPÓSITO</small></div></section><section id="catalogo"><small>DEL PRODUCTOR A TU CASA</small><h2>Pequeñas elecciones. <em>Gran impacto.</em></h2><div class="categories"><button data-cat="">Todo</button><button data-cat="Frutas y verduras">Huerta</button><button data-cat="Despensa">Despensa</button><button data-cat="Cuidado personal">Cuidado</button><button data-cat="Hogar sostenible">Hogar</button></div><div id="shop"></div></section><section id="dashboard" hidden><h2>Administración EcoMarket</h2><button id="add" class="button">Agregar producto</button><div class="kpis"><article>Activos <b id="total"></b></article><article>Stock bajo <b id="low"></b></article><article>Valor inventario <b id="value"></b></article></div><div class="filters"><input id="search" placeholder="Buscar producto o productor"><select id="cat"></select><select id="city"></select><select id="state"><option value="">Todos los estados</option><option>Disponible</option><option>Stock bajo</option><option>Agotado</option></select><button id="clear">Limpiar</button></div><p id="report" role="status"></p><div id="admin"></div></section></main><dialog id="modal"><form id="form"><button type="button" id="close">Cerrar</button><h2 id="form-title">Producto</h2><input id="id" type="hidden"><label>Nombre<input id="name" required minlength="3"></label><label>Categoría<select id="category"></select></label><label>Precio<input id="price" type="number" min="1" required></label><label>Stock<input id="stock" type="number" min="0" required></label><label>Stock mínimo<input id="minimum" type="number" min="0" required></label><label>Productor<input id="producer" required minlength="3"></label><label>Ciudad<select id="town"></select></label><label><input id="organic" type="checkbox"> Orgánico</label><button class="button">Guardar</button><p id="error"></p></form></dialog><footer>EcoMarket · Consumo responsable, impacto compartido</footer></body></html>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>EcoMarket | Compra local</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="validacion.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="#inicio">eco<span>market</span></a>
+      <nav>
+        <a href="#inicio">Inicio</a><a href="#catalogo">Catálogo</a
+        ><button id="admin-link">Administración</button>
+      </nav>
+    </header>
+    <main>
+      <section id="inicio" class="hero">
+        <div>
+          <small>BUENO PARA TI. JUSTO CON QUIEN LO CULTIVA.</small>
+          <h1>Lo local sabe<br /><em>a futuro.</em></h1>
+          <p>Productos sostenibles directo de quienes los hacen.</p>
+          <a class="button" href="#catalogo">Explorar productos ↓</a>
+        </div>
+        <div class="art hero-photo"><span>ESPACIO PARA TU FOTO PRINCIPAL</span><small>IMAGEN PENDIENTE DE ENTREGA</small></div>
+      </section>
+      <section class="categories-section"><h2>Explora por categorías</h2><div class="category-links"><button data-cat="Frutas y verduras">🍃<br>Frutas y verduras</button><button data-cat="Despensa">♧<br>Despensa saludable</button><button data-cat="Cuidado personal">❋<br>Cuidado personal</button><button data-cat="Hogar sostenible">⌂<br>Hogar sostenible</button></div></section><section id="catalogo">
+        <small>DEL PRODUCTOR A TU CASA</small>
+        <h2>Pequeñas elecciones. <em>Gran impacto.</em></h2>
+        <div class="categories">
+          <button data-cat="">Todo</button
+          ><button data-cat="Frutas y verduras">Huerta</button
+          ><button data-cat="Despensa">Despensa</button
+          ><button data-cat="Cuidado personal">Cuidado</button
+          ><button data-cat="Hogar sostenible">Hogar</button>
+        </div>
+        <div id="shop"></div></section><section class="producer"><div class="producer-photo">ESPACIO PARA FOTO DEL PRODUCTOR</div><div><small>COMERCIO CON RAÍCES</small><h2>Compra local,<br>genera impacto.</h2><p>Apoyamos a familias campesinas y emprendimientos colombianos con una economía más justa.</p><div class="impact-grid"><span>🌱 Alimentos más saludables</span><span>👩‍🌾 Productores locales</span><span>♻ Menor impacto ambiental</span></div></div></section><section class="social-proof"><div><h2>Lo que dicen nuestros clientes</h2><blockquote>“Productos frescos, de excelente calidad y con sentido social. ¡Me encanta EcoMarket!”<cite>— Laura Martínez, cliente de ejemplo</cite></blockquote></div><form id="subscribe"><h2>✉ Suscríbete y recibe novedades</h2><p>Promociones, nuevos productos y tips de vida sostenible.</p><label for="sub-email" class="sr-only">Tu correo electrónico</label><input id="sub-email" type="email" required placeholder="Tu correo electrónico"><button class="button">Suscribirme</button><span id="sub-status" role="status"></span></form></section><section id="dashboard" hidden>
+        <h2>Administración EcoMarket</h2>
+        <button id="add" class="button">Agregar producto</button>
+        <div class="kpis">
+          <article>Activos <b id="total"></b></article>
+          <article>Stock bajo <b id="low"></b></article>
+          <article>Valor inventario <b id="value"></b></article>
+        </div>
+        <div class="filters">
+          <input id="search" placeholder="Buscar producto o productor" /><select
+            id="cat"
+          ></select
+          ><select id="city"></select
+          ><select id="state">
+            <option value="">Todos los estados</option>
+            <option>Disponible</option>
+            <option>Stock bajo</option>
+            <option>Agotado</option></select
+          ><button id="clear">Limpiar filtros</button><button id="reset-data">Restaurar catálogo original</button>
+        </div>
+        <p id="report" role="status"></p>
+        <section class="chart-wrap"><h3>Productos por categoría</h3><canvas id="chart" aria-label="Gráfico por categoría"></canvas></section><div id="admin"></div>
+      </section>
+    </main>
+    <dialog id="modal">
+      <form id="form">
+        <button type="button" id="close">Cerrar</button>
+        <h2 id="form-title">Producto</h2>
+        <input id="id" type="hidden" /><label
+          >Nombre<input id="name" required minlength="3" /></label
+        ><label>Categoría<select id="category"></select></label
+        ><label>Precio<input id="price" type="number" min="1" required /></label
+        ><label>Stock<input id="stock" type="number" min="0" required /></label
+        ><label
+          >Stock mínimo<input
+            id="minimum"
+            type="number"
+            min="0"
+            required /></label
+        ><label>Productor<input id="producer" required minlength="3" /></label
+        ><label>Ciudad<select id="town"></select></label
+        ><label><input id="organic" type="checkbox" /> Orgánico</label
+        ><button class="button">Guardar</button>
+        <p id="error"></p>
+      </form>
+    </dialog>
+    <footer>EcoMarket · Consumo responsable, impacto compartido</footer>
+  <script>document.querySelector("#subscribe").addEventListener("submit",e=>{e.preventDefault();document.querySelector("#sub-status").textContent="¡Gracias por suscribirte!"})</script></body>
+</html>
+

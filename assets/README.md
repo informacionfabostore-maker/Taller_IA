@@ -1,0 +1,1 @@
+Carpeta preparada para recibir las imágenes de cabecera, productos y productores que entregará la estudiante. No se han generado ni descargado imágenes. Sustituir los bloques de espacio reservado de index.html por las rutas acordadas al recibir los archivos.

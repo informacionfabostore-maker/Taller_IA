@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "campo": "nombre",
+    "mensaje": "Texto debe tener 3–80 caracteres"
+  },
+  {
+    "id": 1,
+    "campo": "productor",
+    "mensaje": "Texto debe tener 3–80 caracteres"
+  },
+  {
+    "id": 1,
+    "campo": "categoria",
+    "mensaje": "Categoría inválida"
+  },
+  {
+    "id": 1,
+    "campo": "precio",
+    "mensaje": "Precio debe ser entero positivo"
+  },
+  {
+    "id": 1,
+    "campo": "stock",
+    "mensaje": "Debe ser entero no negativo"
+  },
+  {
+    "id": 1,
+    "campo": "stockMinimo",
+    "mensaje": "Debe ser entero no negativo"
+  },
+  {
+    "id": 1,
+    "campo": "ciudad",
+    "mensaje": "Ciudad inválida"
+  },
+  {
+    "id": 1,
+    "campo": "organico",
+    "mensaje": "Debe ser booleano"
+  },
+  {
+    "id": 1,
+    "campo": "fechaRegistro",
+    "mensaje": "Fecha fuera de rango"
+  },
+  {
+    "id": 1,
+    "campo": "id",
+    "mensaje": "ID inválido o repetido"
+  }
+]

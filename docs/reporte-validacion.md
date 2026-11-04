@@ -1,0 +1,1 @@
+# Reporte. validacion.js detecta IDs, texto, categorías, precio, stock, ciudad, booleanos y fecha. Fixture incorrecta: 10 errores. Dataset final: 0 errores sobre 35 productos. Ver reporte-antes.json y reporte-despues.json.

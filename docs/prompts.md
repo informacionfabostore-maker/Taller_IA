@@ -6,8 +6,11 @@ Actúa como desarrollador frontend senior especializado en marketplaces sostenib
 ## Meta-prompting
 Evalúa qué información falta sobre audiencia, propuesta, contenidos, identidad visual, funcionalidades y restricciones. Formula preguntas concretas sin asumir respuestas.
 
-## Propuesta visual — chain of thought resumido
-Solicita una propuesta UX/UI con secciones y propósito, jerarquía, paleta, tipografía, componentes, accesibilidad y responsive. Entregar razones resumidas y verificables, sin exponer razonamiento interno privado. Propuesta aplicada: cabecera blanca, portada verde con foto aportada por estudiante, accesos a categorías, productos, bloque de impacto, testimonio/suscripción y footer verde.
+## Propuesta visual
+Solicita una propuesta UX/UI con secciones y propósito, jerarquía, paleta, tipografía, componentes, accesibilidad y responsive. Entregar razones resumidas y verificables, sin exponer razonamiento interno privado. Propuesta aplicada: cabecera clara, portada verde con fotografía de productos, accesos a categorías, productos, bloque de impacto, testimonio/suscripción y footer verde.
+
+## Generación de imágenes
+Con ChatGPT se generaron imágenes fotográficas para la portada, un productor local y cinco productos destacados (banano, huevos, café, miel y quinua). Se pidieron escenas limpias, luz natural, estética editorial de mercado campesino colombiano y sin textos ni marcas para mantener la legibilidad de la interfaz. Los archivos finales están en `assets/`.
 
 ## Zero-shot
 “Diseña una tarjeta accesible de producto EcoMarket con nombre, categoría, precio COP, stock y acción; devuelve HTML semántico y CSS independiente.”
@@ -21,4 +24,4 @@ Solicita una propuesta UX/UI con secciones y propósito, jerarquía, paleta, tip
 “Revisa la respuesta contra el brief y las reglas del esquema. No cambies datos automáticamente; presenta hallazgos y corrección propuesta.”
 
 ### Ajustes humanos
-Se mantuvo el MVP en HTML/CSS/JS vanilla, se marcaron datos ficticios y se reservó el espacio fotográfico para recursos entregados por la estudiante. Se priorizaron búsqueda y filtros combinables, acciones CRUD y persistencia local.
+Se mantuvo el MVP en HTML/CSS/JS vanilla, se marcaron datos ficticios y se añadieron recursos generados con ChatGPT. Se priorizaron búsqueda y filtros combinables, acciones CRUD y persistencia local.

@@ -11,6 +11,7 @@ MVP académico para comercio sostenible colombiano. Ejecuta desde Live Server pa
 - Registro de técnicas y prompts: `docs/prompts.md`.
 - Reflexión y lista de verificación: `docs/reflexion.md`.
 - Capturas solicitadas: `evidencias/`.
+- Imágenes generadas con ChatGPT para la portada, el productor y cinco productos destacados: `assets/`.
 
 ## Uso
 1. Abrir `index.html` con Live Server.
@@ -18,6 +19,6 @@ MVP académico para comercio sostenible colombiano. Ejecuta desde Live Server pa
 3. Pulsa Administración para abrir KPI, búsqueda/filtros, gráfico y CRUD.
 4. Los cambios se guardan en localStorage. “Limpiar datos locales” restaura el JSON original.
 
-No usa frameworks. Datos comerciales de ejemplo, ficticios. Las fotos de cabecera y productor quedan reservadas para las imágenes que entregará la estudiante; no se han generado imágenes en esta entrega.
+No usa frameworks. Los datos comerciales y productores son ficticios. Las imágenes de `assets/` se generaron con ChatGPT para esta maqueta académica.
 
-Evidencias capturadas: landing, categoría, panel/gráfico, modal y móvil. Las áreas de fotografía permanecen reservadas para los archivos que aportará la estudiante. Ver docs/ y evidencias/.
+Evidencias capturadas: landing con imágenes, categoría, panel/gráfico, modal y móvil. Ver `docs/` y `evidencias/`.

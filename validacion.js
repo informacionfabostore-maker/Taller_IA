@@ -1,1 +1,49 @@
-const CATEGORIAS=["Frutas y verduras","Despensa","Cuidado personal","Hogar sostenible"];const CIUDADES=["Bucaramanga","Floridablanca","Girón","Bogotá","Medellín","Cali","Tunja","Cúcuta"];function validarProductos(a){const e=[],seen=new Set();if(!Array.isArray(a))return[{id:"?",campo:"lista",mensaje:"Se esperaba un arreglo"}];a.forEach((p,i)=>{const err=(c,m)=>e.push({id:p?.id??i+1,campo:c,mensaje:m});if(!Number.isInteger(p.id)||p.id<1||seen.has(p.id))err("id","ID inválido o repetido");seen.add(p.id);for(const k of ["nombre","productor"])if(typeof p[k]!=="string"||p[k].trim().length<3||p[k].length>80)err(k,"Texto debe tener 3–80 caracteres");if(!CATEGORIAS.includes(p.categoria))err("categoria","Categoría inválida");if(!Number.isInteger(p.precio)||p.precio<=0)err("precio","Precio debe ser entero positivo");for(const k of ["stock","stockMinimo"])if(!Number.isInteger(p[k])||p[k]<0)err(k,"Debe ser entero no negativo");if(!CIUDADES.includes(p.ciudad))err("ciudad","Ciudad inválida");for(const k of ["organico","activo"])if(typeof p[k]!=="boolean")err(k,"Debe ser booleano");if(!/^2026-(0[1-9]|1[01])-(0[1-9]|[12][0-9]|3[01])$/.test(p.fechaRegistro))err("fechaRegistro","Fecha fuera de rango")});return e}if(typeof module!=="undefined")module.exports={validarProductos};
+const CATEGORIAS = [
+  "Frutas y verduras",
+  "Despensa",
+  "Cuidado personal",
+  "Hogar sostenible",
+];
+const CIUDADES = [
+  "Bucaramanga",
+  "Floridablanca",
+  "Girón",
+  "Bogotá",
+  "Medellín",
+  "Cali",
+  "Tunja",
+  "Cúcuta",
+];
+function validarProductos(a) {
+  const e = [],
+    seen = new Set();
+  if (!Array.isArray(a))
+    return [{ id: "?", campo: "lista", mensaje: "Se esperaba un arreglo" }];
+  a.forEach((p, i) => {
+    const err = (c, m) => e.push({ id: p?.id ?? i + 1, campo: c, mensaje: m });
+    if (!Number.isInteger(p.id) || p.id < 1 || seen.has(p.id))
+      err("id", "ID inválido o repetido");
+    seen.add(p.id);
+    for (const k of ["nombre", "productor"])
+      if (
+        typeof p[k] !== "string" ||
+        p[k].trim().length < 3 ||
+        p[k].length > 80
+      )
+        err(k, "Texto debe tener 3–80 caracteres");
+    if (!CATEGORIAS.includes(p.categoria))
+      err("categoria", "Categoría inválida");
+    if (!Number.isInteger(p.precio) || p.precio <= 0)
+      err("precio", "Precio debe ser entero positivo");
+    for (const k of ["stock", "stockMinimo"])
+      if (!Number.isInteger(p[k]) || p[k] < 0)
+        err(k, "Debe ser entero no negativo");
+    if (!CIUDADES.includes(p.ciudad)) err("ciudad", "Ciudad inválida");
+    for (const k of ["organico", "activo"])
+      if (typeof p[k] !== "boolean") err(k, "Debe ser booleano");
+    if (!/^2026-(0[1-9]|1[01])-(0[1-9]|[12][0-9]|3[01])$/.test(p.fechaRegistro))
+      err("fechaRegistro", "Fecha fuera de rango");
+  });
+  return e;
+}
+if (typeof module !== "undefined") module.exports = { validarProductos };

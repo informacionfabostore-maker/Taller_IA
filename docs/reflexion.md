@@ -8,9 +8,11 @@
 6. Para producción se requieren backend, inventario transaccional, pagos seguros, privacidad, autenticación, logística, monitoreo, accesibilidad auditada y contenidos comerciales verificados.
 
 ## Lista de comprobación
-- Landing semántica y responsive; imágenes suministradas por la estudiante por integrar.
+- Landing semántica y responsive, siguiendo la referencia visual; se puede abrir `index.html` directamente.
+- Imágenes generadas con ChatGPT para cabecera, productor, destacados y cada una de las 35 fichas.
+- Carrito lateral con fotografía del producto, bordes redondeados y degradado suave.
 - Dashboard KPI, tabla/cards, estados, filtros combinados, CRUD y localStorage.
 - Dataset 35 y cinco ejemplos manuales documentados.
 - Validador, reporte antes/después y datos ficticios.
-- Capturas en evidencias (completar tras revisar la versión final en navegador).
+- Capturas de la versión final en `evidencias/`.
 - Gráfico de cantidades por categoría como bonus.

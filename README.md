@@ -1,6 +1,6 @@
 # EcoMarket — Taller práctico 2
 
-MVP académico para comercio sostenible colombiano. Ejecuta desde Live Server para leer `productos.json` (fetch no funciona al abrir como archivo).
+MVP académico para comercio sostenible colombiano. `index.html` puede abrirse directamente: `productos.js` carga el catálogo sin depender de un servidor. También funciona con Live Server.
 
 ## Entregables
 - Landing page: `index.html`, `styles.css`.
@@ -11,14 +11,14 @@ MVP académico para comercio sostenible colombiano. Ejecuta desde Live Server pa
 - Registro de técnicas y prompts: `docs/prompts.md`.
 - Reflexión y lista de verificación: `docs/reflexion.md`.
 - Capturas solicitadas: `evidencias/`.
-- Imágenes generadas con ChatGPT para la portada, el productor y cinco productos destacados: `assets/`.
+- Imágenes generadas con ChatGPT para la portada, el productor, cinco destacados y las fichas fotográficas de los 35 productos: `assets/`.
 
 ## Uso
-1. Abrir `index.html` con Live Server.
-2. En la landing, usa Catálogo y filtros de categoría.
-3. Pulsa Administración para abrir KPI, búsqueda/filtros, gráfico y CRUD.
-4. Los cambios se guardan en localStorage. “Limpiar datos locales” restaura el JSON original.
+1. Abre `index.html` con doble clic o con Live Server.
+2. Usa Productos o los mosaicos de categoría para abrir y filtrar el catálogo; agrega productos al carrito.
+3. En el pie de página, pulsa Administración para abrir KPI, búsqueda/filtros, gráfico y CRUD.
+4. Los cambios del catálogo se guardan en localStorage. “Restaurar catálogo original” revierte los cambios locales.
 
 No usa frameworks. Los datos comerciales y productores son ficticios. Las imágenes de `assets/` se generaron con ChatGPT para esta maqueta académica.
 
-Evidencias capturadas: landing con imágenes, categoría, panel/gráfico, modal y móvil. Ver `docs/` y `evidencias/`.
+Evidencias capturadas: portada de referencia a 1024×680, categoría, panel/gráfico, modal, vista móvil y carrito con imagen. Ver `docs/` y `evidencias/`.

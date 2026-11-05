@@ -10,7 +10,7 @@ Evalúa qué información falta sobre audiencia, propuesta, contenidos, identida
 Solicita una propuesta UX/UI con secciones y propósito, jerarquía, paleta, tipografía, componentes, accesibilidad y responsive. Entregar razones resumidas y verificables, sin exponer razonamiento interno privado. Propuesta aplicada: cabecera clara, portada verde con fotografía de productos, accesos a categorías, productos, bloque de impacto, testimonio/suscripción y footer verde.
 
 ## Generación de imágenes
-Con ChatGPT se generaron imágenes fotográficas para la portada, un productor local y cinco productos destacados (banano, huevos, café, miel y quinua). Se pidieron escenas limpias, luz natural, estética editorial de mercado campesino colombiano y sin textos ni marcas para mantener la legibilidad de la interfaz. Los archivos finales están en `assets/`.
+Con ChatGPT se generaron imágenes fotográficas para la portada, un productor local, el retrato ilustrativo de una clienta y cinco productos destacados (banano, huevos, café, miel y quinua). Para cubrir el catálogo completo, se crearon cuatro láminas fotográficas 3×3 por categoría, sin rótulos ni marcas, con escenas de producto centradas y luz natural. El frontend muestra un recorte independiente de cada celda para los 35 productos. Los archivos finales están en `assets/`.
 
 ## Zero-shot
 “Diseña una tarjeta accesible de producto EcoMarket con nombre, categoría, precio COP, stock y acción; devuelve HTML semántico y CSS independiente.”

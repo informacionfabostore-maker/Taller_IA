@@ -1,1 +1,5 @@
-# Evidencias: capturas Edge: 01 landing, 02 filtro, 03 dashboard y gráfico, 04 modal, 05 móvil 390 px. Las zonas de fotografía quedan para imágenes aportadas por la estudiante.
+# Evidencias
+
+Capturas de la versión final: `01-landing.png` (referencia a 1024×680), `02-categoria.png`, `03-dashboard.png`, `04-modal.png`, `05-mobile-390.png` y `06-carrito.png`.
+
+La portada y las fichas de los 35 productos usan imágenes generadas con ChatGPT. Las verificaciones y el resumen están en `RESULTADOS.txt`.
